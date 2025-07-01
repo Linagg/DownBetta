@@ -3,7 +3,9 @@ import ctypes
 import yt_dlp
 import json
 import os
+import requests
 from mutagen.easyid3 import EasyID3
+from mutagen.id3 import ID3, APIC
 from mutagen.mp3 import MP3
 import tkinter as tk
 from tkinter import filedialog, simpledialog, messagebox
@@ -118,6 +120,22 @@ with yt_dlp.YoutubeDL(ydl_opts) as ydl:
             audio.save()
         except Exception as e:
             print(f"❌ Error escribiendo metadata en {filename}: {e}")
+        #Incrustar portada
+        try:
+            audio_id3 = ID3(filename)
+            thumb_url = entry.get('thumbnail') or (entry.get('thumbnails')[0]['url'] if entry.get('thumbnails') else None)
+            if thumb_url:
+                image_data = requests.get(thumb_url).content
+                audio_id3.add(APIC(
+                    encoding=3,
+                    mime='image/jpeg',
+                    type=3,
+                    desc='Cover',
+                    data=image_data
+                ))
+                audio_id3.save()
+        except Exception as e:
+            print(f"❌ Error añadiendo portada a {filename}: {e}")
 
 # ---------- Guardar metadata ----------
 with open(os.path.join(download_dir, 'metadata.json'), 'w', encoding='utf-8') as f:
