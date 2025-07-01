@@ -1,0 +1,44 @@
+# 👉 Archivos y carpetas de Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*.log
+*.bak
+*.tmp
+*.swp
+.DS_Store
+
+# 👉 Entorno virtual (ajusta el nombre si tu venv tiene otro nombre)
+.venv/
+env/
+venv/
+
+# 👉 Archivos de configuración de IDEs
+.vscode/
+.idea/
+
+# 👉 Archivos generados por PyInstaller
+build/
+dist/
+*.spec
+
+# 👉 Ejecutables
+*.exe
+*.app
+*.icns
+*.ico
+
+# 👉 Archivos de salida del programa
+metadata.json
+*.mp3
+
+# 👉 Archivos temporales de Tkinter o el sistema
+*.png
+*.db
+*.~lock.*
+Thumbs.db
+
+# 👉 Archivos de sistema en Mac
+Icon?
