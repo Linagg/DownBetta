@@ -1,4 +1,4 @@
-# 🎵 SoundCloud MP3 Downloader by David Betta
+# 🎵 DOWNBETTA
 
 Una herramienta sencilla con interfaz gráfica para descargar playlists de SoundCloud y convertirlas automáticamente a archivos MP3, con metadatos incrustados.
 
