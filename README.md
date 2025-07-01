@@ -24,7 +24,7 @@ Una herramienta sencilla con interfaz gráfica para descargar playlists de Sound
 
 ### 🔁 Método 1: Ejecutable (usuarios normales)
 
-1. Descarga el archivo `SoundCloudDownloader.exe` desde la sección [Releases](https://github.com/tuusuario/SoundCloudDownloader/releases)
+1. Descarga el archivo `DavidBetta.exe` desde la sección [Releases](https://github.com/Linagg/DownBetta/releases)
 2. Haz doble clic para abrirlo
 3. Introduce la URL de tu playlist de SoundCloud
 4. Selecciona una carpeta donde guardar los MP3
