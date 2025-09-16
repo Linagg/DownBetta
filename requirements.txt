@@ -1,0 +1,4 @@
+yt-dlp>=2024.5.26
+mutagen>=1.47.0
+requests>=2.31.0
+pillow>=10.3.0
